@@ -1,4 +1,4 @@
-package com.yojulab.study_springboot.configs;
+package com.example.study_springboots_gradle.configs;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

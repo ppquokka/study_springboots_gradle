@@ -1,6 +1,6 @@
-package com.yojulab.study_springboot.dao;
+package com.example.study_springboots_gradle.dao;
 
-import org.mybatis.spring.SqlSessionTemplate;
+// import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
