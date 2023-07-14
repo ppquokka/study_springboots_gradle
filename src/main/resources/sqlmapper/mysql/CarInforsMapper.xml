@@ -19,6 +19,8 @@
         ;
 	</select>
 
+
+
     <!-- 검색 with pagination -->
 	<select id="selectSearchtWithPagination" parameterType="Map" resultType="Map">
         SELECT * 
@@ -34,7 +36,7 @@
             and CAR_NAME like CONCAT(#{words}, '%')
             </when>
         </choose>    
-        <!-- limit 0,10 -->
+       
         limit #{pageBegin}, #{"pageScale}    
         ;
 	</select>
@@ -45,6 +47,8 @@
         from car_infors
         ;
 	</select>
+
+
 
     <!-- mybatis foreach HashMap.put("CAR_INFOR_ID_LIST", CAR_INFOR_ID_LIST)-->
 	<select id="selectInUID" parameterType="Map" resultType="Map">    

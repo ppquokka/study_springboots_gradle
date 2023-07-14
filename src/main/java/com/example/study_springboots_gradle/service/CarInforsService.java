@@ -6,8 +6,10 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.study_springboots_gradle.utils.Paginations;
+import com.example.study_springboots_gradle.dao.SharedDao;
 
 
 @Service
@@ -48,7 +50,11 @@ public class CarInforsService {
     public Map selectSearchtWithPagination(Map dataMap) {
         // 페이지 형성 위한 계산
         int totalCount = (int)this.selectTotal(dataMap);
-        int currentPage = (int) dataMap.get("currentPage");     // from client in parameter
+        // int currentPage = (int) dataMap.get("currentPage");     // from client in parameter
+        int currentPage = 1;
+        if(dataMap.get("currentPage") != null) {
+            currentPage = Integer.parseInt((String)dataMap.get("currentPage"));    // from client in param
+        }
         Paginations paginations = new Paginations(totalCount, currentPage);
         HashMap result = new HashMap<>();
         result.put("paginations", paginations);  // 페이지에 대한 정보    

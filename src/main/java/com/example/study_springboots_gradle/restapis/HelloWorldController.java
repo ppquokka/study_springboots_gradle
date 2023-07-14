@@ -1,4 +1,4 @@
-package com.yojulab.study_springboot.restapis;
+package com.example.study_springboots_gradle.restapis;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.yojulab.study_springboot.service.HelloWorldService;
+import com.example.study_springboots_gradle.service.HelloWorldService;
 
 @Controller
 public class HelloWorldController {

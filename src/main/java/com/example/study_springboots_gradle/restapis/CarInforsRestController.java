@@ -1,4 +1,4 @@
-package com.yojulab.study_springboot.restapis;
+package com.example.study_springboots_gradle.restapis;
 
 import java.util.Map;
 
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.yojulab.study_springboot.service.CarInforsService;
+import com.example.study_springboots_gradle.service.CarInforsService;
 
 @RestController
 public class CarInforsRestController {
